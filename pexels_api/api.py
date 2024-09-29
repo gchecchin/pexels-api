@@ -12,7 +12,7 @@ from .tools import Photo
 """ Class """
 class API:
     def __init__(self, PEXELS_API_KEY):
-        self.PEXELS_AUTHORIZATION = {"Authorization":PEXELS_API_KEY}
+        self.PEXELS_AUTHORIZATION = {"Authorization":PEXELS_API_KEY,"User-Agent":"Pexels/Python"}
         self.request = None
         self.json = None
         self.page = None
